@@ -1,12 +1,12 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "description": "Native cross-platform database manager (PostgreSQL, MySQL, Redis, MongoDB)",
   "homepage": "https://github.com/suiflex/rdb",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/rdb/releases/download/v0.22.0/rdb-x86_64-pc-windows-msvc.zip",
-      "hash": "a963cc20c3c900ff39916f3ea6b6b785f9c389a7f3852a2bbcc1494ca5d76538"
+      "url": "https://github.com/suiflex/rdb/releases/download/v0.23.0/rdb-x86_64-pc-windows-msvc.zip",
+      "hash": "c5e6eddd14b82e0a495aa1302b79f8e1335576294d6ddc53bffe59a7c2e9efae"
     }
   },
   "bin": "rdb.exe",
