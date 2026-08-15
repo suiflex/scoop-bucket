@@ -23,7 +23,10 @@ scoop install rdb
 scoop install websift
 ```
 
----
+## Package details
+
+<details>
+<summary><strong>RDB</strong> — native, cross-platform database manager</summary>
 
 <p align="center">
   <picture>
@@ -32,10 +35,8 @@ scoop install websift
   </picture>
 </p>
 
-## RDB
-
-Native, cross-platform database manager — PostgreSQL, MySQL, Redis, MongoDB,
-SQLite, Cassandra. Repository: [suiflex/rdb](https://github.com/suiflex/rdb).
+PostgreSQL, MySQL, Redis, MongoDB, SQLite, Cassandra. Repository:
+[suiflex/rdb](https://github.com/suiflex/rdb).
 
 ```powershell
 scoop install rdb
@@ -46,16 +47,16 @@ scoop uninstall rdb
 > Formerly published as `rdbs`. The old manifest has been removed — install `rdb`
 > instead. If you previously installed `rdbs`, run `scoop uninstall rdbs` first.
 
----
+</details>
+
+<details>
+<summary><strong>Websift</strong> — bounded web search, research, and crawling over MCP</summary>
 
 <p align="center">
   <img src="assets/websift-logo.png" alt="Websift" width="180">
 </p>
 
-## Websift
-
-Bounded web search, research, mapping, scraping, and crawling over MCP — one
-Rust binary, no API key. Repository:
+One Rust binary, no API key. Repository:
 [suiflex/websift](https://github.com/suiflex/websift).
 
 ```powershell
@@ -70,6 +71,8 @@ and `update`. Verify the install with:
 ```powershell
 websift status
 ```
+
+</details>
 
 ## How it works
 
