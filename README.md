@@ -14,9 +14,9 @@
 |---|---|---|---|
 | <img src="assets/rdb-mark.svg" width="28"> | **rdb** | Native, cross-platform database manager | `scoop install rdb` |
 | <img src="assets/websift-logo.png" width="28"> | **websift** | Bounded web search, research, mapping, scraping, and crawling over MCP | `scoop install websift` |
-| <img src="assets/suiflex-mark.png" width="28"> | **suitest** | Local dashboard, SQLite, and MCP server for QA testing — one command | `scoop install suitest` |
-| <img src="assets/suiflex-mark.png" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
-| <img src="assets/suiflex-mark.png" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
+| <img src="assets/suitest-mark.svg" width="28"> | **suitest** | Local dashboard, SQLite, and MCP server for QA testing — one command | `scoop install suitest` |
+| <img src="assets/suitest-mark.svg" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
+| <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
 
 Add the bucket once, then install by name:
 
@@ -80,53 +80,50 @@ websift status
 </details>
 
 <details>
-<summary><strong>Suitest</strong> — local dashboard, SQLite, and MCP in one command</summary>
+<summary><strong>Suitest</strong> — dashboard, SQLite, and MCP for QA testing</summary>
 
 <p align="center">
-  <img src="assets/suiflex-mark.png" alt="Suitest" width="120">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/suitest-logo-dark.svg">
+    <img src="assets/suitest-logo-light.svg" alt="Suitest" width="280">
+  </picture>
 </p>
 
 Suitest is a local QA testing bundle. Repository:
 [suiflex/suitest](https://github.com/suiflex/suitest).
 
+Two components are published to the bucket:
+
 ```powershell
+# Local dashboard, SQLite, and MCP server — one command
 scoop install suitest
 scoop update suitest
 scoop uninstall suitest
-```
 
-Requires `node` and `uv`; `lib/venv.js` provisions the Python 3.12 runtime and
-installs the bundled wheels into a managed venv on first boot.
-
-</details>
-
-<details>
-<summary><strong>Suitest MCP</strong> — MCP server for IDE agents</summary>
-
-<p align="center">
-  <img src="assets/suiflex-mark.png" alt="Suitest MCP" width="120">
-</p>
-
-MCP server for IDE agents that generate, run, and publish QA tests. Repository:
-[suiflex/suitest](https://github.com/suiflex/suitest).
-
-```powershell
+# MCP server for IDE agents — generate, run, and publish QA tests
 scoop install suitest-mcp
 scoop update suitest-mcp
 scoop uninstall suitest-mcp
 ```
 
-Requires `node` and `uv`; `lib/python.js` takes a system `python3` when one is
-available and otherwise provisions an interpreter through `uv`.
+Both require `node` and `uv`. `suitest`'s `lib/venv.js` provisions the Python
+3.12 runtime and installs bundled wheels into a managed venv on first boot;
+`suitest-mcp`'s `lib/python.js` takes a system `python3` when one is available
+and otherwise provisions an interpreter through `uv`.
 
 </details>
+
 
 <details>
 <summary><strong>ForgeGuard</strong> — engineering guardrails for AI coding agents</summary>
 
 <p align="center">
-  <img src="assets/suiflex-mark.png" alt="ForgeGuard" width="120">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/forgeguard-logo-dark.svg">
+    <img src="assets/forgeguard-logo-light.svg" alt="ForgeGuard" width="280">
+  </picture>
 </p>
+
 
 Token-efficient, language-agnostic engineering guardrails for AI coding agents.
 Repository: [suiflex/ForgeGuard](https://github.com/suiflex/ForgeGuard).
