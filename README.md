@@ -14,7 +14,6 @@
 |---|---|---|---|
 | <img src="assets/rdb-mark.svg" width="28"> | **rdb** | Native, cross-platform database manager | `scoop install rdb` |
 | <img src="assets/websift-logo.png" width="28"> | **websift** | Bounded web search, research, mapping, scraping, and crawling over MCP | `scoop install websift` |
-| <img src="assets/suitest-mark.svg" width="28"> | **suitest** | Local dashboard, SQLite, and MCP server for QA testing — one command | `scoop install suitest` |
 | <img src="assets/suitest-mark.svg" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
 | <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
 
@@ -24,7 +23,6 @@ Add the bucket once, then install by name:
 scoop bucket add suiflex https://github.com/suiflex/scoop-bucket
 scoop install rdb
 scoop install websift
-scoop install suitest
 scoop install suitest-mcp
 scoop install forgeguard
 ```
@@ -80,36 +78,27 @@ websift status
 </details>
 
 <details>
-<summary><strong>Suitest</strong> — dashboard, SQLite, and MCP for QA testing</summary>
+<summary><strong>Suitest MCP</strong> — MCP server for IDE agents</summary>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/suitest-logo-dark.svg">
-    <img src="assets/suitest-logo-light.svg" alt="Suitest" width="280">
+    <img src="assets/suitest-logo-light.svg" alt="Suitest MCP" width="280">
   </picture>
 </p>
 
-Suitest is a local QA testing bundle. Repository:
+MCP server for IDE agents — generate, run, and publish QA tests. Repository:
 [suiflex/suitest](https://github.com/suiflex/suitest).
 
-Two components are published to the bucket:
-
 ```powershell
-# Local dashboard, SQLite, and MCP server — one command
-scoop install suitest
-scoop update suitest
-scoop uninstall suitest
-
-# MCP server for IDE agents — generate, run, and publish QA tests
 scoop install suitest-mcp
 scoop update suitest-mcp
 scoop uninstall suitest-mcp
 ```
 
-Both require `node` and `uv`. `suitest`'s `lib/venv.js` provisions the Python
-3.12 runtime and installs bundled wheels into a managed venv on first boot;
-`suitest-mcp`'s `lib/python.js` takes a system `python3` when one is available
-and otherwise provisions an interpreter through `uv`.
+Requires `node` and `uv`. `suitest-mcp`'s `lib/python.js` takes a system
+`python3` when one is available and otherwise provisions an interpreter through
+`uv`.
 
 </details>
 
@@ -147,7 +136,6 @@ own repository — never hand-edited here:
 |---|---|
 | `bucket/rdb.json` | [`release-build.yml`](https://github.com/suiflex/rdb/blob/develop/.github/workflows/release-build.yml) in `suiflex/rdb` |
 | `bucket/websift.json` | [`release.yml`](https://github.com/suiflex/websift/blob/develop/.github/workflows/release.yml) in `suiflex/websift` |
-| `bucket/suitest.json` | [`release-launcher.yml`](https://github.com/suiflex/suitest/blob/main/.github/workflows/release-launcher.yml) in `suiflex/suitest` |
 | `bucket/suitest-mcp.json` | [`release-mcp.yml`](https://github.com/suiflex/suitest/blob/main/.github/workflows/release-mcp.yml) in `suiflex/suitest` |
 | `bucket/forgeguard.json` | [`release.yml`](https://github.com/suiflex/ForgeGuard/blob/main/.github/workflows/release.yml) in `suiflex/ForgeGuard` |
 
