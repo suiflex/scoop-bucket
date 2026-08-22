@@ -6,11 +6,11 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.14.0/forgeguard-windows-x86_64.zip",
-      "hash": "db7c48483fa3c7f634f1c30ebcf701a8bd2139afbbf45272128b3d76dc128d90"
+      "hash": "f5ac26f6b7475e2514b28568bf2bcb8bfded48e9a5e256ac0779bfdaccc5443f"
     },
     "arm64": {
       "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.14.0/forgeguard-windows-aarch64.zip",
-      "hash": "028f44ac31e740ca896b9a3b4b5296895b9b93dc13a749d9c80def6637efc6d7"
+      "hash": "4723ef822c35a077c031b49121066aa976327ee92419cf76d310c3d2eae4a7e6"
     }
   },
   "bin": "forgeguard.exe",
