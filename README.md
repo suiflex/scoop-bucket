@@ -15,7 +15,7 @@
 | <img src="assets/rdb-mark.svg" width="28"> | **rdb** | Native, cross-platform database manager | `scoop install rdb` |
 | <img src="assets/websift-logo.png" width="28"> | **websift** | Bounded web search, research, mapping, scraping, and crawling over MCP | `scoop install websift` |
 | <img src="assets/suitest-mark.svg" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
-| <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
+| <img src="assets/safehell-mark.svg" width="28"> | **safehell** | Approval-gated SSH broker for AI coding agents | `scoop install safehell` |
 
 Add the bucket once, then install by name:
 
@@ -25,6 +25,7 @@ scoop install rdb
 scoop install websift
 scoop install suitest-mcp
 scoop install forgeguard
+scoop install safehell
 ```
 
 ## Package details
@@ -102,6 +103,37 @@ Requires `node` and `uv`. `suitest-mcp`'s `lib/python.js` takes a system
 
 </details>
 
+<details>
+<summary><strong>SafeHell</strong> — approval-gated SSH broker for AI coding agents</summary>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/safehell-logo-dark.svg">
+    <img src="assets/safehell-logo-light.svg" alt="SafeHell" width="280">
+  </picture>
+</p>
+
+Approval-gated SSH broker for AI coding agents: credentials live in an
+encrypted per-user vault, every remote command is shown in a foreground
+terminal before it runs, and output is redacted before it reaches the agent.
+Repository: [suiflex/SafeHell](https://github.com/suiflex/SafeHell).
+
+```powershell
+scoop install safehell
+scoop update safehell
+scoop uninstall safehell
+```
+
+After installing, run `safehell setup` once per machine to create the vault,
+then `safehell init` in each project. Verify the install with:
+
+```powershell
+safehell --version
+```
+
+</details>
+
+
 
 <details>
 <summary><strong>ForgeGuard</strong> — engineering guardrails for AI coding agents</summary>
@@ -137,6 +169,7 @@ own repository — never hand-edited here:
 | `bucket/rdb.json` | [`release-build.yml`](https://github.com/suiflex/rdb/blob/develop/.github/workflows/release-build.yml) in `suiflex/rdb` |
 | `bucket/websift.json` | [`release.yml`](https://github.com/suiflex/websift/blob/develop/.github/workflows/release.yml) in `suiflex/websift` |
 | `bucket/suitest-mcp.json` | [`release-mcp.yml`](https://github.com/suiflex/suitest/blob/main/.github/workflows/release-mcp.yml) in `suiflex/suitest` |
+| `bucket/safehell.json` | [`release-build.yml`](https://github.com/suiflex/SafeHell/blob/develop/.github/workflows/release-build.yml) in `suiflex/SafeHell` |
 | `bucket/forgeguard.json` | [`release.yml`](https://github.com/suiflex/ForgeGuard/blob/main/.github/workflows/release.yml) in `suiflex/ForgeGuard` |
 
 Each workflow downloads the published Windows release zip, computes its
