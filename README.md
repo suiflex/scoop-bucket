@@ -16,6 +16,7 @@
 | <img src="assets/websift-logo.png" width="28"> | **websift** | Bounded web search, research, mapping, scraping, and crawling over MCP | `scoop install websift` |
 | <img src="assets/suitest-mark.svg" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
 | <img src="assets/safehell-mark.svg" width="28"> | **safehell** | Approval-gated SSH broker for AI coding agents | `scoop install safehell` |
+| <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
 
 Add the bucket once, then install by name:
 
