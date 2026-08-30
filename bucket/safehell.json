@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "description": "Approval-gated SSH broker for AI coding agents",
+  "homepage": "https://github.com/suiflex/SafeHell",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.2.0/safehell-windows-x86_64.zip",
+      "hash": "54e2d8a78f4ab70f09a6f271b996f95ed5cd1f81da3211056244063457634c9d"
+    },
+    "arm64": {
+      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.2.0/safehell-windows-aarch64.zip",
+      "hash": "05f45c73c4ad8f0930e8c6ff152c28958ccdf67bad2a5857e2bd3ff5b0dd1c73"
+    }
+  },
+  "bin": "safehell.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/suiflex/SafeHell/releases/download/v$version/safehell-windows-x86_64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/suiflex/SafeHell/releases/download/v$version/safehell-windows-aarch64.zip"
+      }
+    }
+  }
+}
