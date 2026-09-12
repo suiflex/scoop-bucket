@@ -17,6 +17,7 @@
 | <img src="assets/suitest-mark.svg" width="28"> | **suitest-mcp** | MCP server for IDE agents — generate, run, and publish QA tests | `scoop install suitest-mcp` |
 | <img src="assets/safehell-mark.svg" width="28"> | **safehell** | Approval-gated SSH broker for AI coding agents | `scoop install safehell` |
 | <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
+| <img src="assets/fluxguard-mark.svg" width="28"> | **fluxguard** | Provider-agnostic resource awareness layer for AI coding agents | `scoop install fluxguard` |
 
 Add the bucket once, then install by name:
 
@@ -27,6 +28,7 @@ scoop install websift
 scoop install suitest-mcp
 scoop install forgeguard
 scoop install safehell
+scoop install fluxguard
 ```
 
 ## Package details
@@ -158,6 +160,41 @@ scoop uninstall forgeguard
 
 </details>
 
+<details>
+<summary><strong>FluxGuard</strong> — provider-agnostic resource awareness layer for AI coding agents</summary>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fluxguard-logo-dark.svg">
+    <img src="assets/fluxguard-logo-light.svg" alt="FluxGuard" width="280">
+  </picture>
+</p>
+
+Provider-agnostic resource awareness layer for AI coding agents: measures
+quota, context window, request rate limits, and budget flow (flux), returning
+concise execution advice so agents make cost-effective decisions and avoid
+unexpected quota exhaustion. Repository: [suiflex/FluxGuard](https://github.com/suiflex/FluxGuard).
+
+```powershell
+scoop install fluxguard
+scoop update fluxguard
+scoop uninstall fluxguard
+```
+
+Connect to coding agents with the interactive installer:
+
+```powershell
+fluxguard install
+```
+
+Verify the install with:
+
+```powershell
+fluxguard --version
+```
+
+</details>
+
 
 
 ## How it works
@@ -172,6 +209,7 @@ own repository — never hand-edited here:
 | `bucket/suitest-mcp.json` | [`release-mcp.yml`](https://github.com/suiflex/suitest/blob/main/.github/workflows/release-mcp.yml) in `suiflex/suitest` |
 | `bucket/safehell.json` | [`release-build.yml`](https://github.com/suiflex/SafeHell/blob/develop/.github/workflows/release-build.yml) in `suiflex/SafeHell` |
 | `bucket/forgeguard.json` | [`release.yml`](https://github.com/suiflex/ForgeGuard/blob/main/.github/workflows/release.yml) in `suiflex/ForgeGuard` |
+| `bucket/fluxguard.json` | [`release-build.yml`](https://github.com/suiflex/FluxGuard/blob/develop/.github/workflows/release-build.yml) in `suiflex/FluxGuard` |
 
 Each workflow downloads the published Windows release zip, computes its
 SHA-256, and pushes an updated manifest here. `bucket/websift.json` also carries
