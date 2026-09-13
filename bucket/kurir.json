@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "description": "Portable MCP server registration and harness integration toolkit",
+  "homepage": "https://github.com/suiflex/kurir",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/suiflex/kurir/releases/download/v0.1.0/kurir-0.1.0-windows-x86_64.zip",
+      "hash": "16fd9080c80ed7ec537a6842fbf3af141ab54ea884be6e7e2d8ed13bda0b4fd1"
+    },
+    "arm64": {
+      "url": "https://github.com/suiflex/kurir/releases/download/v0.1.0/kurir-0.1.0-windows-aarch64.zip",
+      "hash": "1cc681df1039a017fdd9e5ba0a0eaf00f7725454a73b8c892d6e7ccc2dc8af91"
+    }
+  },
+  "bin": "kurir.exe",
+  "checkver": {
+    "github": "https://github.com/suiflex/kurir"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/suiflex/kurir/releases/download/v$version/kurir-$version-windows-x86_64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/suiflex/kurir/releases/download/v$version/kurir-$version-windows-aarch64.zip"
+      }
+    }
+  }
+}
