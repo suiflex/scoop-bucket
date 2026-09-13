@@ -18,6 +18,7 @@
 | <img src="assets/safehell-mark.svg" width="28"> | **safehell** | Approval-gated SSH broker for AI coding agents | `scoop install safehell` |
 | <img src="assets/forgeguard-mark.svg" width="28"> | **forgeguard** | Token-efficient, language-agnostic engineering guardrails for AI coding agents | `scoop install forgeguard` |
 | <img src="assets/fluxguard-mark.svg" width="28"> | **fluxguard** | Provider-agnostic resource awareness layer for AI coding agents | `scoop install fluxguard` |
+| <img src="assets/kurir-mark.svg" width="28"> | **kurir** | Portable MCP server registration and harness integration toolkit | `scoop install kurir` |
 
 Add the bucket once, then install by name:
 
@@ -29,6 +30,7 @@ scoop install suitest-mcp
 scoop install forgeguard
 scoop install safehell
 scoop install fluxguard
+scoop install kurir
 ```
 
 ## Package details
@@ -195,6 +197,41 @@ fluxguard --version
 
 </details>
 
+<details>
+<summary><strong>Kurir</strong> — portable MCP server registration and harness integration toolkit</summary>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/kurir-logo-dark.svg">
+    <img src="assets/kurir-logo-light.svg" alt="Kurir" width="280">
+  </picture>
+</p>
+
+Register any MCP server with agent harnesses through one portable CLI and
+library. Kurir handles harness-specific config paths, entry shapes, scopes,
+backups, and diagnostics. Repository: [suiflex/kurir](https://github.com/suiflex/kurir).
+
+```powershell
+scoop install kurir
+scoop update kurir
+scoop uninstall kurir
+```
+
+Verify the install with:
+
+```powershell
+kurir --version
+```
+
+Inspect supported harnesses and readiness:
+
+```powershell
+kurir clients
+kurir doctor
+```
+
+</details>
+
 
 
 ## How it works
@@ -210,6 +247,7 @@ own repository — never hand-edited here:
 | `bucket/safehell.json` | [`release-build.yml`](https://github.com/suiflex/SafeHell/blob/develop/.github/workflows/release-build.yml) in `suiflex/SafeHell` |
 | `bucket/forgeguard.json` | [`release.yml`](https://github.com/suiflex/ForgeGuard/blob/main/.github/workflows/release.yml) in `suiflex/ForgeGuard` |
 | `bucket/fluxguard.json` | [`release-build.yml`](https://github.com/suiflex/FluxGuard/blob/develop/.github/workflows/release-build.yml) in `suiflex/FluxGuard` |
+| `bucket/kurir.json` | [`release.yml`](https://github.com/suiflex/kurir/blob/main/.github/workflows/release.yml) in `suiflex/kurir` |
 
 Each workflow downloads the published Windows release zip, computes its
 SHA-256, and pushes an updated manifest here. `bucket/websift.json` also carries
