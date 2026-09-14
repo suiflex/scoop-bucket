@@ -6,11 +6,11 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/suiflex/arsy-code/releases/download/v0.1.2/arsy-windows-x86_64.zip",
-      "hash": "a9d72644fd70ab771368aa5c3560092c1c17a9064aaf4b185fd54009a4652828"
+      "hash": "7853e3280885a79c26c1cd2cd449c586ec19141e9d3b543241f986a48345032c"
     },
     "arm64": {
       "url": "https://github.com/suiflex/arsy-code/releases/download/v0.1.2/arsy-windows-aarch64.zip",
-      "hash": "99ccc9ed5e77d13ebb5e02a905288e89a2eda66e9dba9ff6208fcb7b143f5cfb"
+      "hash": "0003d1f9283732188c91fd8b68f951b47d38702a3e3cc7652d0d7eaf66436c8f"
     }
   },
   "bin": "arsy.exe",
