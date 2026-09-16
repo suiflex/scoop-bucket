@@ -1,12 +1,12 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Bounded web search, research, mapping, scraping, and crawling over MCP",
   "homepage": "https://github.com/suiflex/websift",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/websift/releases/download/v0.4.1/websift-v0.4.1-x86_64-pc-windows-msvc.zip",
-      "hash": "0afed1a888835f37c28cc8f85eaf81b2b6ee82560c8ab142a6fbc8989a45f5fd"
+      "url": "https://github.com/suiflex/websift/releases/download/v0.4.2/websift-v0.4.2-x86_64-pc-windows-msvc.zip",
+      "hash": "4e159b22b216571525e2328609bb697032b5b9276c56368019d191355d73fb11"
     }
   },
   "bin": "websift.exe",
