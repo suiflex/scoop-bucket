@@ -1,16 +1,16 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Approval-gated SSH broker for AI coding agents",
   "homepage": "https://github.com/suiflex/SafeHell",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.6.0/safehell-windows-x86_64.zip",
-      "hash": "59c7c3278516c047fd8bc4ba133aa0f1ad9d9ce0d3aa269a1c88ed30a2b5f0f9"
+      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.6.1/safehell-windows-x86_64.zip",
+      "hash": "e1e752fb5bc7d3c76cc6a17ab299ce3c09bda09b97a3ecac6fac9eb8f28ea7a4"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.6.0/safehell-windows-aarch64.zip",
-      "hash": "d753a7075e2947a783ed40ece56c37ee2644b4bb0a86b0302e402c178da6f2b3"
+      "url": "https://github.com/suiflex/SafeHell/releases/download/v0.6.1/safehell-windows-aarch64.zip",
+      "hash": "89012cdc7708331aa378151934777ee81e871287203d4f6ebd4084cf6947994b"
     }
   },
   "bin": "safehell.exe",
