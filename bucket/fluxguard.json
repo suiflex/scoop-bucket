@@ -1,16 +1,16 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Provider-agnostic resource awareness layer for AI coding agents",
   "homepage": "https://github.com/suiflex/FluxGuard",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/FluxGuard/releases/download/v0.2.0/fluxguard-windows-x86_64.zip",
-      "hash": "2fbe451335fefb3409a99b4ba7181949a63d871ac693636e668fa8b692b150d0"
+      "url": "https://github.com/suiflex/FluxGuard/releases/download/v0.2.1/fluxguard-windows-x86_64.zip",
+      "hash": "be40b6463c2d2d2e635ab2850327c126690b72d0feb441769df00e6e2531445e"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/FluxGuard/releases/download/v0.2.0/fluxguard-windows-aarch64.zip",
-      "hash": "716aa393cae942cc730e8858ae68ef2b4c02cb0cf66ccca4478af494417e7adf"
+      "url": "https://github.com/suiflex/FluxGuard/releases/download/v0.2.1/fluxguard-windows-aarch64.zip",
+      "hash": "c5fa94f64abe495025bb4980ec4e0b20886e175934e37acfa70b2c42f1c7ea6f"
     }
   },
   "bin": "fluxguard.exe",
