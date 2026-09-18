@@ -1,19 +1,22 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Local, auditable, model-independent software-engineering agent harness",
   "homepage": "https://github.com/suiflex/arsy-code",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.1.2/arsy-windows-x86_64.zip",
-      "hash": "7853e3280885a79c26c1cd2cd449c586ec19141e9d3b543241f986a48345032c"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.2.0/arsy-windows-x86_64.zip",
+      "hash": "4c7742fd65ed7f15ae351d9353f0a89d56061863d852ddef0606bf850bf974d0"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.1.2/arsy-windows-aarch64.zip",
-      "hash": "0003d1f9283732188c91fd8b68f951b47d38702a3e3cc7652d0d7eaf66436c8f"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.2.0/arsy-windows-aarch64.zip",
+      "hash": "73dced339804b07d4614649b15bc2fe676f3daf0038f590f70141d5eb34c08d4"
     }
   },
-  "bin": "arsy.exe",
+  "bin": [
+    "arsy.exe",
+    "fluxguard.exe"
+  ],
   "checkver": "github",
   "autoupdate": {
     "architecture": {
