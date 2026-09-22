@@ -1,16 +1,16 @@
 {
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Token-efficient, language-agnostic engineering guardrails for AI coding agents",
   "homepage": "https://github.com/suiflex/ForgeGuard",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.18.0/forgeguard-windows-x86_64.zip",
-      "hash": "6ff3cb330fbf190358aafc038c8f6a4a3cd73fe8c1468b417080ec265e67b2ef"
+      "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.19.0/forgeguard-windows-x86_64.zip",
+      "hash": "d0f79e01f7afc47ffa355d6cd0999b986eac78ef88021f6a1384062d0b058e70"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.18.0/forgeguard-windows-aarch64.zip",
-      "hash": "22aabb31a8185f7d460cbe056275ffc88599398c7cfc3fe611fb2306a62f90e1"
+      "url": "https://github.com/suiflex/ForgeGuard/releases/download/v0.19.0/forgeguard-windows-aarch64.zip",
+      "hash": "25db3aeff9bbbe1092d95186846dacb9f7117123cb89ebce2b5f382d1fbcda57"
     }
   },
   "bin": "forgeguard.exe",
