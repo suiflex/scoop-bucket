@@ -1,16 +1,16 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Local, auditable, model-independent software-engineering agent harness",
   "homepage": "https://github.com/suiflex/arsy-code",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.3.0/arsy-windows-x86_64.zip",
-      "hash": "906a495c74122f1831d7402a84cb7518164fdb5a1feb0774fd3a0800aa9d6a37"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.4.0/arsy-windows-x86_64.zip",
+      "hash": "d13b42da0eaa41681bb468ee2877472bbcebf8aba0f80a315e7358e57e821b26"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.3.0/arsy-windows-aarch64.zip",
-      "hash": "9e923c01e45759e7e8ea9daefbe4b837e5c49799aee058ab35a1ee51f781bc46"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.4.0/arsy-windows-aarch64.zip",
+      "hash": "a0be1e4c6db4a7fc02fb8f1f6d7b29f82ca659660bba57053cf019e5df3eb445"
     }
   },
   "bin": [
