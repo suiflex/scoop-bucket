@@ -1,22 +1,23 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.1",
   "description": "Local, auditable, model-independent software-engineering agent harness",
   "homepage": "https://github.com/suiflex/arsy-code",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.12.0/arsy-windows-x86_64.zip",
-      "hash": "250ddc86b4136f5859be4c63c2d6d3a02d6f9be29195642e648f36e854b4f635"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.13.1/arsy-windows-x86_64.zip",
+      "hash": "e0c1ed7b60cb32f2cadef10c487a1293d819251349802e2815f63678b9066379"
     },
     "arm64": {
-      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.12.0/arsy-windows-aarch64.zip",
-      "hash": "4fc753a6294f1ff4c5fd3a67830715a8f87d1546fec3e7db0b6025ba8b74abbc"
+      "url": "https://github.com/suiflex/arsy-code/releases/download/v0.13.1/arsy-windows-aarch64.zip",
+      "hash": "74d31bacca14cda51cc67986812fd69fc700684923426df5a15897df2efea971"
     }
   },
   "bin": [
     "arsy.exe",
     "fluxguard.exe"
   ],
+  "post_install": "if (!(Test-Path \"$dir\\arsy-sandbox-worker.exe\")) { throw 'Release archive is missing arsy-sandbox-worker.exe' }",
   "checkver": "github",
   "autoupdate": {
     "architecture": {
